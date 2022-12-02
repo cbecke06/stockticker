@@ -1,5 +1,6 @@
 <body>
-<form method='post'  action='http://localhost:8080/process'>
+var port = process.env.PORT ||3000;
+<form method='post'  action=port>
 	Enter Company Name or Stock Ticker Symbol: <br><input type = 'text' name= 'the_name'><br>
     <br />
         <label><input type="radio" name="type" value= "cname">Company Name</label>
