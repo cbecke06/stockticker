@@ -1,5 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb+srv://clairesatlas:webprogramming@cluster0.pb2trzw.mongodb.net/?retryWrites=true&w=majority";
+var port = process.env.PORT ||3000;
 
 var http = require('http');
 var fs = require('fs');
@@ -83,4 +84,4 @@ http.createServer(async function (req, res)
 	  }
   
 
-}).listen(8080);
+}).listen(port);
